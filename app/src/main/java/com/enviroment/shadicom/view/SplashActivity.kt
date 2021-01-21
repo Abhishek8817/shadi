@@ -8,6 +8,8 @@ import com.google.android.material.snackbar.Snackbar
 
 class SplashActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -17,5 +19,9 @@ class SplashActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+    }
+
+    fun toCheckthecommit(){
+        
     }
 }
