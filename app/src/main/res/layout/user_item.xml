@@ -64,7 +64,7 @@
         android:id="@+id/tv_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_map_drawable"
+        android:drawableLeft="@drawable/ic_google_map"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:singleLine="true"
@@ -72,7 +72,7 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintVertical_chainStyle="packed"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/tv_mail"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tv_address"
         app:layout_constraintTop_toBottomOf="@+id/tv_country"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:drawablePadding="5dp"
 
         />
