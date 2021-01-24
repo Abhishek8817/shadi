@@ -22,6 +22,6 @@ class SplashActivity : AppCompatActivity() {
     }
 
     fun toCheckthecommit(){
-        
+
     }
 }

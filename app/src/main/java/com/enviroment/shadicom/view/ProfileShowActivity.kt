@@ -36,7 +36,7 @@ class ProfileShowActivity : AppCompatActivity() {
     }
 
     fun setAdapter(mUserList: List<UserResult>){
-        mProfileAdapter = ProfileAdapter(mUserList)
+        mProfileAdapter = ProfileAdapter(mUserList , this)
         mRvProfile.adapter = mProfileAdapter
     }
 
