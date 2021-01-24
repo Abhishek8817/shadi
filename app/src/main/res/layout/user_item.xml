@@ -35,12 +35,12 @@
         android:id="@+id/tv_loc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif"
         android:singleLine="true"
-        android:text="Indore, Madhaya pradesh"
+        android:text="Indore , India"
         android:textColor="@color/white"
         android:textSize="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
@@ -56,35 +56,80 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_loc" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_loc"
+        />
 
 
-    <Button
-        android:id="@+id/btn_accept"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_decline"
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_map_drawable"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/loc"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mail"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_country"
-        android:layout_marginTop="50dp"
+        android:drawablePadding="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:letterSpacing="0"
         android:text="@string/accept"
-        android:theme="@style/PrimaryColoredButton"
         android:textColor="@color/purple_88"
+        android:theme="@style/PrimaryColoredButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_decline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="60dp"
         />
 
     <Button
         android:id="@+id/btn_decline"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:letterSpacing="0"
+        android:text="@string/decline"
+        android:textColor="@color/purple_88"
+        android:theme="@style/PrimaryColoredButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_accept"
-        app:layout_constraintTop_toBottomOf="@+id/tv_country"
-        android:layout_marginTop="50dp"
-        android:text="@string/decline"
-        android:theme="@style/PrimaryColoredButton"
-        android:textColor="@color/purple_88"
+        android:layout_marginBottom="60dp"
         />
 
 
